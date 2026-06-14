@@ -1,0 +1,39 @@
+# Android / Gradle
+.gradle/
+build/
+**/build/
+local.properties
+.externalNativeBuild/
+.cxx/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# Signing and secrets
+*.jks
+*.keystore
+keystore.properties
+signing.properties
+.env
+.env.*
+secrets.properties
+
+# Local data and diagnostics
+*.db
+*.sqlite
+*.sqlite3
+*.log
+captures/
+private-test-data/
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
