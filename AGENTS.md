@@ -72,3 +72,13 @@ The formal project and application name is **Nutri Raccoon**. Normal in-app page
 - Keep APKs, AABs, signing output, local databases, captured labels, user photos, and generated build directories out of Git unless a documented release process explicitly publishes an allowed artifact.
 
 When a compact public `PROJECT_CONTEXT.md` is added later, use it for current architecture, active implementation stage, stable paths, build baseline, and public project constraints. Keep detailed private planning and raw operational history out of this repository.
+
+## Project Workflow Rules
+
+For all projects under `D:\Projects`, the following hard rules apply:
+- **Default Environment**: Windows + PowerShell 7.
+- **Default Project Path**: `D:\Projects\<Platform>\<Project>\repo\<Repo>`.
+- **Single-Step Instructions**: Commands are provided one at a time with explicit `Set-Location` if needed.
+- **Automation Preferred**: Scripts are provided over manual steps.
+- **Default Download Folder**: `C:\Users\kamui\Downloads` is the starting point for files.
+- **Confirmation Required**: Wait for explicit "OK" before proceeding to the next step.
