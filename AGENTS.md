@@ -75,10 +75,10 @@ When a compact public `PROJECT_CONTEXT.md` is added later, use it for current ar
 
 ## Project Workflow Rules
 
-For all projects under `D:\Projects`, the following hard rules apply:
+For all projects, the following general rules apply:
 - **Default Environment**: Windows + PowerShell 7.
-- **Default Project Path**: `D:\Projects\<Platform>\<Project>\repo\<Repo>`.
-- **Single-Step Instructions**: Commands are provided one at a time with explicit `Set-Location` if needed.
+- **Single-Step Instructions**: Commands are provided one at a time with explicit directory navigation if needed.
 - **Automation Preferred**: Scripts are provided over manual steps.
-- **Default Download Folder**: `C:\Users\kamui\Downloads` is the starting point for files.
-- **Confirmation Required**: Wait for explicit "OK" before proceeding to the next step.
+- **Confirmation Required**: Wait for explicit confirmation before proceeding to the next step.
+
+> **Note**: Detailed paths, device-specific information, and personal workflow preferences are documented separately in a private file. See your private fork for `PRIVATE_WORKFLOW_RULES.md`.
