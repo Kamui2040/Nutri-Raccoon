@@ -21,8 +21,12 @@
 - The app remains free; Ko-fi support is external and optional.
 - Licensing status is defined by `LICENSE` and `LICENSES/README.md`.
 
-## Current UI direction
+## Current UI and architecture direction
 
+- Android UI architecture: Kotlin with Jetpack Compose.
+- Use a state-driven, feature-oriented structure with reusable design tokens and Compose components from the initial scaffold.
+- A single activity may host Compose navigation; ViewModels, domain rules, data access, and platform integrations remain separated by responsibility.
+- Whole-screen custom Canvas rendering is not the baseline; use contained custom drawing only where it is materially useful.
 - Top bar: mascot/app symbol left, **Nutri** centred, Settings right.
 - Main meals: Breakfast, Lunch, Dinner, Snacks, plus future custom sections.
 - Bottom navigation: Home, History, central Camera, Products.
@@ -37,7 +41,7 @@
 
 - Stable Android application ID.
 - Minimum and target Android SDK levels.
-- JDK, Gradle, Android Gradle Plugin, Kotlin, and Compose baselines.
+- JDK, Gradle, Android Gradle Plugin, Kotlin, and Compose version baselines.
 - FLOSS barcode-scanning and OCR dependencies.
 - Initial product-data provider integration and cache policy.
 - Initial database and migration baseline.
@@ -65,10 +69,11 @@ Do not resolve these implicitly. Record reviewed decisions in the appropriate au
 ## Next safe work
 
 1. Keep public documentation compact and non-duplicative.
-2. Select and document the Android/application baseline.
+2. Select and document the remaining Android/application version and dependency baselines.
 3. Create the Android scaffold only after explicit approval.
 4. Configure deterministic builds, signing hooks, licence checks, and CI with the scaffold.
-5. Begin Phase 1 only after the foundation decisions are recorded.
+5. Establish reusable Compose theme tokens and components before implementing many screens.
+6. Begin Phase 1 only after the foundation decisions are recorded.
 
 ## Private-only material
 
