@@ -43,6 +43,21 @@ Read current `main` before making assumptions. Use `PROJECT_CONTEXT.md` for curr
 - Select a stable application ID before public distribution.
 - Never publish or commit private signing material.
 
+## Gemini in Android Studio
+
+- The project is currently in research and planning. Gemini MUST NOT create the Android scaffold, application code, build files, scripts, or implementation changes unless implementation has been explicitly approved.
+- Gemini in Android Studio MAY be used for supervised, read-only Android and F-Droid research, compatibility analysis after relevant files exist, Android API or accessibility explanations, and low-risk test or acceptance-criteria suggestions.
+- After an approved scaffold exists, Gemini MAY also assist with supervised build, manifest, resource, and Logcat diagnostics.
+- Gemini MUST NOT implicitly resolve the unresolved foundation decisions listed in `PROJECT_CONTEXT.md`.
+- Gemini recommendations MUST preserve the existing local-first, FLOSS, privacy, and F-Droid constraints.
+- Gemini MUST NOT access ignored files, sensitive files, signing material, or files outside the repository.
+- Web search and URL access SHOULD remain disabled unless the current task explicitly requires and approves them.
+- Commands, writes, renames, deletions, MCP access, and connected-device actions MUST require explicit approval.
+- Gemini MUST NOT commit, push, create or merge pull requests, mark pull requests ready, delete branches, or perform releases.
+- Before any Gemini-assisted file change, create a focused feature branch and verify a clean working tree.
+- After each Gemini session, inspect the exact changed-file set and run the required deterministic validation.
+- Gemini output is advisory; repository files, reviewed project decisions, and deterministic tools remain authoritative.
+
 ## Validation
 
 - Run the checks documented for the affected area.
