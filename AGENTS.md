@@ -23,6 +23,18 @@ Read current `main` before making assumptions. Use `PROJECT_CONTEXT.md` for curr
 - Update only the authoritative documents affected by a change.
 - Do not duplicate specialist specifications across instruction or overview files.
 
+## Tool routing
+
+- Treat mixed work as separate workstreams and route each part independently.
+- Documentation-only changes must not consume Codex usage by default.
+- Use ChatGPT or the GitHub connector for documentation drafting, review, and small controlled documentation changes.
+- Use deterministic PowerShell, Gradle, and project tools for repeatable environment checks, file operations, validation, builds, tests, packaging, and Git checks.
+- Local Ollama may be used for low-risk summarisation, QA-note organisation, classification, and first-pass documentation drafts.
+- Reserve Codex for approved repository-aware implementation, risky cross-file changes, architecture work, and final code-aware validation.
+- Use Codex for documentation only when a complex implementation must be inspected across the repository before the documentation can be updated accurately.
+- A Codex implementation task does not imply that its accompanying documentation should also be edited with Codex.
+- State the concrete reason before making any exception to this routing.
+
 ## Non-negotiable constraints
 
 - Keep the app local-first, private, offline-capable, fully FLOSS, and F-Droid-compatible.

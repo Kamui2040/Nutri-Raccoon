@@ -6,7 +6,7 @@ Nutri Raccoon will use **Kotlin with Jetpack Compose** for the Android applicati
 
 The initial implementation should use a state-driven, modular architecture rather than concentrating screen construction, navigation, and feature logic in one activity. A single activity may host Compose navigation, while screen state and behavior remain separated by feature and responsibility.
 
-This decision selects the architectural direction only. Exact Kotlin, Compose, Android Gradle Plugin, Gradle, JDK, minimum SDK, and target SDK versions remain foundation decisions that must be reviewed and recorded separately.
+The selected Android SDK, JDK, Gradle, Android Gradle Plugin, Kotlin, and Compose versions are recorded in `docs/ANDROID_BASELINE.md`.
 
 ## Suggested layers
 
