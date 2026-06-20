@@ -21,8 +21,8 @@ The application ID and namespace start identical. The application ID is treated 
 | Setting | Selected value |
 | --- | --- |
 | Minimum SDK | API 26 — Android 8.0 |
-| Compile SDK | API 36 |
-| Target SDK | API 36 |
+| Compile SDK | API 37 |
+| Target SDK | API 37 |
 | Expected SDK Build Tools | 36.0.0 |
 
 API 26 is the compatibility floor for the initial release. Raising it later requires a reviewed compatibility decision and clear release notes.
@@ -41,7 +41,7 @@ The project compiles and targets the latest stable Android platform selected for
 | Kotlin support | AGP built-in Kotlin |
 | Built-in Kotlin/KGP baseline | 2.3.10 |
 | Compose compiler Gradle plugin | 2.3.10 |
-| Stable Compose BOM | `2026.05.00` |
+| Stable Compose BOM | `2026.06.00` |
 | Build-script language | Kotlin DSL |
 | Dependency/plugin catalogue | `gradle/libs.versions.toml` |
 
