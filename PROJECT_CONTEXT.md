@@ -41,14 +41,14 @@
 
 - Application ID and namespace: `io.github.kamui2040.nutriraccoon`
 - Minimum SDK: API 26 (Android 8.0)
-- Compile SDK: API 36
-- Target SDK: API 36
+- Compile SDK: API 37
+- Target SDK: API 37
 - JDK and JVM target: 17
 - Android Gradle Plugin: 9.2.1
 - Gradle wrapper: 9.4.1
 - Kotlin: AGP built-in Kotlin, backed by Kotlin Gradle Plugin 2.3.10
 - Compose compiler Gradle plugin: 2.3.10
-- Stable Compose BOM: `2026.05.00`
+- Stable Compose BOM: `2026.06.00`
 - Build scripts: Kotlin DSL with a Gradle version catalog
 - Initial Gradle structure: one `app` module; no premature multi-module split
 - Recommended development IDE: Android Studio Quail 1 | 2026.1.1 Patch 2
