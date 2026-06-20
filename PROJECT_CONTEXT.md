@@ -37,16 +37,30 @@
 - About uses the established K2040 Android dialog pattern and opens Ko-fi externally.
 - Reusable meal templates support one-tap logging and optional weekday schedules.
 
+## Selected Android baseline
+
+- Application ID and namespace: `io.github.kamui2040.nutriraccoon`
+- Minimum SDK: API 26 (Android 8.0)
+- Compile SDK: API 37
+- Target SDK: API 37
+- JDK and JVM target: 17
+- Android Gradle Plugin: 9.2.1
+- Gradle wrapper: 9.4.1
+- Kotlin: AGP built-in Kotlin, backed by Kotlin Gradle Plugin 2.3.10
+- Compose compiler Gradle plugin: 2.3.10
+- Stable Compose BOM: `2026.06.00`
+- Build scripts: Kotlin DSL with a Gradle version catalog
+- Initial Gradle structure: one `app` module; no premature multi-module split
+- Recommended development IDE: Android Studio Quail 1 | 2026.1.1 Patch 2
+- Authoritative detail: `docs/ANDROID_BASELINE.md`
+
 ## Unresolved foundation decisions
 
-- Stable Android application ID.
-- Minimum and target Android SDK levels.
-- JDK, Gradle, Android Gradle Plugin, Kotlin, and Compose version baselines.
 - FLOSS barcode-scanning and OCR dependencies.
 - Initial product-data provider integration and cache policy.
 - Initial database and migration baseline.
 - Reproducible release-build procedure and signing variable names.
-- Final scope of the first Android scaffold.
+- Explicit approval to create the first Android scaffold.
 
 Do not resolve these implicitly. Record reviewed decisions in the appropriate authoritative document.
 
@@ -54,6 +68,7 @@ Do not resolve these implicitly. Record reviewed decisions in the appropriate au
 
 - Public summary: `README.md`
 - Repository rules: `AGENTS.md`
+- Android application baseline: `docs/ANDROID_BASELINE.md`
 - UI and themes: `docs/DESIGN_NOTES.md`
 - Architecture: `docs/ARCHITECTURE.md`
 - Data and schemas: `docs/DATA_MODEL.md`
@@ -69,11 +84,12 @@ Do not resolve these implicitly. Record reviewed decisions in the appropriate au
 ## Next safe work
 
 1. Keep public documentation compact and non-duplicative.
-2. Select and document the remaining Android/application version and dependency baselines.
-3. Create the Android scaffold only after explicit approval.
+2. Obtain explicit approval before creating the first Android scaffold.
+3. Create only the scaffold scope defined in `docs/ANDROID_BASELINE.md`.
 4. Configure deterministic builds, signing hooks, licence checks, and CI with the scaffold.
-5. Establish reusable Compose theme tokens and components before implementing many screens.
-6. Begin Phase 1 only after the foundation decisions are recorded.
+5. Select and document FLOSS barcode/OCR, product-provider, and database baselines before implementing the related features.
+6. Establish reusable Compose theme tokens and components before implementing many screens.
+7. Begin Phase 1 only after the remaining foundation decisions are recorded.
 
 ## Private-only material
 

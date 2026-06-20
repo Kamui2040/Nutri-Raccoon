@@ -2,10 +2,24 @@
 
 ## Phase 0 — Foundation
 
-- Finalise public/private repository structure.
-- Select stable application ID and Android baseline.
-- Establish licences, contribution rules, privacy model, and signing policy.
-- Add the initial Android project scaffold and deterministic build configuration.
+### Completed decisions and policies
+
+- Public/private repository structure established.
+- Public canonical source and branch/pull-request workflow established.
+- Kotlin with Jetpack Compose selected as the Android UI architecture.
+- Stable application ID and Android platform/toolchain baseline selected.
+- Licences, contribution rules, privacy model, and signing policy established.
+
+### Remaining work
+
+- Approve and create the initial Android project scaffold within the documented scope.
+- Add deterministic local and CI build validation.
+- Configure signing hooks without committing production secrets.
+- Add licence and attribution validation.
+- Select FLOSS barcode-scanning and OCR dependencies.
+- Select the initial product-data provider and cache policy.
+- Select the initial local database and migration baseline.
+- Verify the first unsigned release build and document the reproducible-build procedure.
 
 ## Phase 1 — Manual local diary
 
