@@ -16,6 +16,12 @@
 - Settings symbol aligned right.
 - Settings page uses Back on the left and About on the right.
 
+## About and support
+
+- About follows the established K2040 Android dialog pattern.
+- The optional Ko-fi action opens `https://ko-fi.com/k2040` in the external browser.
+- Ko-fi support is voluntary and does not unlock features or create an entitlement.
+
 ## Bottom navigation
 
 Primary destinations should focus on Home, History, central Camera action, and Products. Settings remains in the top app bar.
